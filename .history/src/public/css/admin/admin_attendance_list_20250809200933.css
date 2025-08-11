@@ -1,0 +1,21 @@
+.attendance-list{
+    background-color: ghostwhite;
+    width: 100%;
+    height: 100%;
+}
+
+.attendance-list__title{
+    padding: 20px 40px;
+    margin: 0;
+}
+
+.attendance-list__date{
+    background-color: white;
+    margin: 20px 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.attendance-list__table

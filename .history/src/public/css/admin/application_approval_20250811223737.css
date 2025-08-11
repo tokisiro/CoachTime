@@ -1,0 +1,49 @@
+.application-approval {
+    background-color: rgb(236, 235, 235);
+    max-width: 100%;
+    padding: 20px;
+}
+
+.application-approval__parts-title {
+    padding: 0px 10px;
+    margin: 0px auto;
+    width: 700px;
+    border-left: 5px solid black;
+}
+
+.application-approval__parts-table {
+    margin: 30px auto;
+    background-color: white;
+    width: 700px;
+    border-collapse: collapse;
+    color: gray;
+    border-radius: 10px;
+}
+
+.application-approval__parts-table th,
+.attendance-list__parts-table td {
+    padding: 20px 30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.application-approval__parts-table--td {
+    padding: auto;
+}
+
+.application-approval__parts-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.application-approval__parts-button {
+    text-align: right;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.attendance-list__parts-button--item {
+    background-color: black;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 3px;
+}

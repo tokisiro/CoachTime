@@ -1,0 +1,48 @@
+.attendance-details {
+    background-color: rgb(236, 235, 235);
+    max-width: 100%;
+}
+
+.attendance-details__parts-title {
+    padding: 15px 40px;
+    margin: 3px auto;
+    width: 70%;
+    border-left: 5px solid black;
+}
+
+.attendance-details__parts-table {
+    margin: 3px auto;
+    background-color: white;
+    width: 700px;
+    border-collapse: collapse;
+    color: gray;
+    border-radius: 10px;
+}
+
+.attendance-details__parts-table th,
+.attendance-details__parts-table td {
+    padding: 20px 30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.attendance-details__parts-table--td {
+    padding: auto;
+}
+
+.attendance-details__parts-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.attendance-details__parts-button {
+    text-align: right;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.attendance-details__parts-button--item {
+    background-color: black;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 3px;
+}

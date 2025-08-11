@@ -1,0 +1,48 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class AttendanceFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        // 休憩2の有無を50%の確率で決める
+    $hasBreak2 = $this->faker->boolean(50);
+
+    // 休憩2の開始・終了時間を設定（nullも有り）
+    $take_break2 = $hasBreak2 ? $this->faker->time() : null;
+    $return_break2 = $hasBreak2 ? $this->faker->time() : null;
+
+        // 出勤退勤時間をランダムに
+    $startTime = $this->faker->time('H:i:s');
+    $endTime = date('H:i:s', strtotime($startTime . ' + 8 hours'));
+
+        // 休憩時間
+    $breakMinutes = 0;
+    if ($hasBreak2 && $take_break2 && $return_break2) {
+        // 例：休憩1 + 休憩2時間（合計）
+        $breakMinutes = 30; // 仮に30分休憩、とする
+        // 実際には休憩時間を計算しても良い
+    }
+
+        return [
+            'user_id' => \App\Models\User::inRandomOrder()->first()->id, // ユーザIDをランダムに
+            'date' => $this->faker->date(), // ランダムな日付
+            'attendance' => $startTime, // 出勤時間
+            'take_break1' => $this->faker->time(), // 休憩開始
+            'return_break1' => $this->faker->time(), // 休憩終了
+            'take_break2' => $take_break2, // 休憩2開始
+            'return_break2' => $return_break2, // 休憩2終了
+            'closing_time' => $this->faker->time(), // 終了時間
+            'working_hours' => $this->faker->numberBetween(4, 9), // 勤務時間（例：4〜9時間の範囲）
+            'remarks' => $this->faker->optional()->text(), // 備考省略可能
+        ];
+    }
+}

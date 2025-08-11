@@ -1,0 +1,47 @@
+.attendance-list {
+    background-color: rgb(236, 235, 235);
+    max-width: 100%;
+}
+
+.attendance-list__parts-switching{
+    margin: 3px auto;
+    width: 70%;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+
+.attendance-list__parts-title {
+    padding: 20px 40px;
+    margin: 3px auto;
+    width: 70%;
+}
+
+.attendance-list__parts-switching{
+    display: flex;
+    margin: 3px auto;
+}
+
+.attendance-list__parts-table {
+    margin: 3px auto;
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse;
+    color: gray;
+    border-radius: 10px;
+}
+
+.attendance-list__parts-table th,
+.attendance-list__parts-table td {
+    padding: 8px 30px;
+    text-align: center;
+}
+
+.attendance-list__parts-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.attendance-list__parts-table--detail {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

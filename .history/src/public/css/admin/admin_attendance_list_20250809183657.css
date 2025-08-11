@@ -1,0 +1,10 @@
+.attendance-list{
+    background-color: ghostwhite;
+    w
+}
+
+.attendance-list__title{
+    display: flex;
+    background-color: white;
+    height: auto 100px;
+}

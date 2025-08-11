@@ -1,0 +1,27 @@
+.header {
+    background-color: black;
+}
+
+.header__inner {
+    max-width: 1230px;
+    display: flex;
+    space-b
+}
+
+.header__inner-logo--item {
+    margin: 5px auto;
+    padding-left: 5px;
+}
+
+.header__inner-navigation{
+    justify-content:flex-end;
+}
+
+.header__inner-navigation--logout,
+.header__inner-navigation--application,
+.header__inner-navigation--list,
+.header__inner-navigation--attendance{
+    color: white;
+    text-decoration: none;
+}
+

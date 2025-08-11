@@ -1,0 +1,21 @@
+
+.attendance-register__situation-date {
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.attendance-register__situation {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.attendance-register__situation-date{
+    margin: 20px ;
+}
+
+.attendance-register__situation-time{
+    font-size: 30px;
+    font-weight: bold;
+}
+

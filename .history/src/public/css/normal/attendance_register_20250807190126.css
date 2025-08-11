@@ -1,0 +1,61 @@
+
+.attendance-register__situation-date {
+    font-size: 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+.attendance-register__situation {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.attendance-register__situation-mark {
+    background-color: gainsboro;
+    height: 20px;
+    width: 70px;
+    font-size: 13px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.attendance-register__situation-date{
+    margin-bottom: 10px;
+}
+
+.attendance-register__situation-time{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.attendance-register__situation-button--start{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius:10px;
+    font-size: 15px;
+}
+
+.attendance-register__situation-button--end {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.attendance-register__situation-button--interruption {
+    background-color: w;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+}
+

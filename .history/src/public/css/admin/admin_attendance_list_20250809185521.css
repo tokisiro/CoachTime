@@ -1,0 +1,14 @@
+.attendance-list{
+    background-color: ghostwhite;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.attendance-list__date{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin-top: 20px;
+}

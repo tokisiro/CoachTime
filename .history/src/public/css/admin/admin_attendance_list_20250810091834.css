@@ -1,0 +1,41 @@
+.attendance-list{
+    background-color: ghostwhite;
+    max-width: 100%;
+}
+
+.attendance-list__title{
+    padding: 20px 40px;
+    margin: 0;
+}
+
+.attendance-list__date{
+    background-color: white;
+    margin: 20px 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    color: gray;
+}
+
+.attendance-list__table{
+    margin: 3px auto;
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse;
+    color: gray;
+}
+
+.attendance-list__table th,
+.attendance-list__table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.attendance-list__table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.attendance-list__table-detail{
+    te: none;
+}

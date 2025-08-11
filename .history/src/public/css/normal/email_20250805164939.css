@@ -1,0 +1,47 @@
+.email {
+    height: 100%;
+    width: 100%;
+}
+
+.email-function {
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px auto;
+}
+
+.email-function__message {
+    margin-bottom: 20px;
+}
+
+.email-function__message-item {
+    font-weight: bold;
+}
+
+.email-function__certification {
+    margin: 40px 0;
+}
+
+.email-function__certification-item {
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-function__resend {
+    margin-top: 40px;
+}
+
+.email-function__resend-item {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.email-Resend {
+    background-color: aqua;
+    margin: 0 auto;
+    padding-left: 10px;
+}

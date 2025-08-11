@@ -1,0 +1,55 @@
+@extends('layouts.admin')
+
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/admin/admin_attendance_details.css') }}" />
+@endsection
+
+<!勤怠詳細画面(管理者)>
+@section('content')
+<div class="attendance-list">
+    <form action="attendance-list__parts">
+        <h2 class="attendance-list__parts-title">
+            スタッフ一覧
+        </h2>
+        <table class="attendance-list__parts-table">
+            <tr>
+                <th>名前</th>
+                <th>メールアドレス</th>
+                <th>月次勤怠</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+        </table>
+        <div class="attendance-list__parts-button">
+            <button class="attendance-list__parts-button--item">
+                修正
+            </button>
+        </div>
+        </form>
+    </div>
+</div>
+@endsection
