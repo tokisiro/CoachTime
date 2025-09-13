@@ -1,0 +1,94 @@
+.attendance-details {
+    background-color: rgb(233, 232, 232);
+    height: 100vh;
+}
+
+.attendance-details__parts {
+    padding: 30px;
+}
+
+.attendance-details__parts-title {
+    margin: 3px auto;
+    padding-left: 10px;
+    width: 700px;
+    border-left: 5px solid black;
+}
+
+.attendance-details__parts-table {
+    margin: 50px auto 0px auto;
+    background-color: white;
+    width: 700px;
+    border-collapse: collapse;
+    color: gray;
+    border-radius: 10px;
+}
+
+.attendance-details__parts-table th {
+    padding: 20px 30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.attendance-details__parts-table td {
+    width: 20%;
+}
+
+.attendance-details__parts-table--item {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.attendance-details__parts-table--input {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 70px;
+    font-size: 15px;
+}
+
+
+.attendance-details__parts-table--td {
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+.attendance-details__parts-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.attendance-details__parts-table--remarks {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    width: 125%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.attendance-details__parts-button {
+    text-align: right;
+    margin: 10px auto 0px auto;
+    width: 700px;
+}
+
+.attendance-details__parts-button--message {
+    color: red;
+}
+
+.attendance-details__parts-button--item {
+    background-color: black;
+    color: white;
+    padding: 3px 15px;
+    border-radius: 3px;
+}
+
+.attendance-details__parts-table--input:readonly,
+.attendance-details__parts-table--remarks:disabled {
+    border: none;
+    /* 枠線を消す */
+    background-color: transparent;
+}
