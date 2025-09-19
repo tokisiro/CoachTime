@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/layouts/sanitize.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/layouts/list.css') }}">
+    @yield('css')
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__inner-logo">
+                <img class="header__inner-logo--item" src="/images/logo.svg" alt="ロゴ">
+            </div>
+            <div class="header__inner-navigation" id="mainHeaderNavigation"> <!-- ここにIDを追加 -->
+                @include('.header_nav_working') {{-- 初期状態のナビゲーションを読み込む --}}
+            </div>
+            <div class="header__inner-navigation">
+                <a class="header__inner-navigation--attendance" href="/attendance">
+                    勤怠
+                </a>
+                <a class="header__inner-navigation--list" href="/attendance/list">
+                    勤怠一覧
+                </a>
+                <a class="header__inner-navigation--application" href="/stamp_correction_request/list">
+                    申請
+                </a>
+                <form id="logout-form-user" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+                </form>
+                <a class="header__inner-navigation--logout" href="#" onclick="event.preventDefault(); document.getElementById('logout-form-user').submit();">
+                    ログアウト
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        @yield('content')
+    </main>
+    @yield('script')
+</body>
+</html>
+
