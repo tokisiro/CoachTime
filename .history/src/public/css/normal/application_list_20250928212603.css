@@ -1,0 +1,70 @@
+.application-list {
+    background-color: rgb(236, 235, 235);
+    height: 100vh;
+}
+
+.application-list__parts{
+    max-height: 100%;
+    padding: 50px;
+}
+
+.application-list__parts-title {
+    margin: 0px auto;
+    width: 70%;
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
+
+.application-list__parts-switching {
+    margin: 3px auto;
+    width: 70%;
+    padding-top: 30px;
+    border-bottom: 2px solid black;
+    display: flex;
+}
+
+.application-list__parts-switching--link{
+    text-decoration: none;
+    color: black;
+    margin: 5px 50px;
+}
+
+.application-list__parts-switching--link.is-active {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.application-list__parts-table {
+    margin: 30px auto;
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse;
+    color: gray;
+    border-radius: 10px;
+}
+
+.application-list__parts-table th,
+.application-list__parts-table td {
+    padding: 8px 30px;
+    text-align: center;
+    width: 00px;
+}
+
+.application-list__parts-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.application-list__parts-table--detail{
+    text-decoration: none;
+    color: black;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination svg {
+    width: 20px;
+}
